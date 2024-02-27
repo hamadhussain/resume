@@ -1,0 +1,445 @@
+body {
+    margin: 0;
+  }
+
+  .bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-color: black;
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+  }
+
+  .bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+  }
+
+  .bg3 {
+    animation-duration: 5s;
+  }
+
+  .content {
+    /* background-color:rgba(19, 6, 6, 0.8); */
+    border-radius: 0.25em;
+    /* box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25); */
+    box-sizing: border-box;
+    left: 50%;
+    /* padding:1vmin; */
+    position: fixed;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* border-radius: 20022px; */
+    background: none;
+  }
+  img {
+    background: none;
+  }
+
+  h1 {
+    font-family: monospace;
+  }
+  /*       
+@keyframes slide {
+0% {
+transform:translateX(-25%);
+}
+50% {
+transform:translateX(-15%);
+}  100% {
+transform:translateX(20%);
+}}   */
+  /* #container {
+color:#999;
+text-transform: uppercase;
+font-size:36px;
+font-weight:bold;
+padding-top:200px;  
+position:fixed;
+width:100%;
+bottom:45%;
+display:block;
+} */
+
+  #flip {
+    
+    height: 58px;
+    overflow: hidden;
+  }
+
+  #flip > div > div {
+    color: #fff;
+    padding: 4px 12px;
+    height: 45px;
+    margin-bottom: 45px;
+    display: inline-block;
+  }
+
+  #flip div:first-child {
+    animation: show 4s linear infinite;
+  }
+
+  #flip div div {
+    /* background:#42c58a; */
+    /* border-radius: 4px; */
+    /* color: black; */
+    color: rgb(7, 131, 61)
+  }
+  #flip div:first-child div {
+    /* background:#4ec7f3;/ */
+    /* color: black; */
+  }
+  #flip div:last-child div {
+    /* background:#DC143C; */
+    /* color: black; */
+  }
+  
+span{
+    text-shadow: -4px 1px 42px;
+              font-family: cursive;
+              font-size: 34px;
+}
+  @keyframes show {
+    0% {
+      margin-top: -270px;
+    }
+    5% {
+      margin-top: -180px;
+    }
+    33% {
+      margin-top: -180px;
+    }
+    38% {
+      margin-top: -90px;
+    }
+    66% {
+      margin-top: -90px;
+    }
+    71% {
+      margin-top: 0px;
+    }
+    99.99% {
+      margin-top: 0px;
+    }
+    100% {
+      margin-top: -270px;
+    }
+  }
+  #flip{
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 2.2;
+  }
+  .AnimateText {
+    padding: 23px;
+  }
+  .text {
+    overflow: hidden;
+    width: 147px;
+    height: 145px;
+    position: relative;
+    left: 27px;
+    font-family: math;
+    color: #c6c6c6;
+  }
+  /* body{
+    ::-webkit-scrollbar:
+  } */
+  #wave {
+    position: relative;
+    height: 70px;
+    width: 600px;
+    background: #e0efe3;
+  }
+  #wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 340px;
+    height: 80px;
+    background-color: rgb(150, 187, 150);
+    right: -5px;
+    top: 40px;
+  }
+  #wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 60%;
+    width: 300px;
+    height: 70px;
+    background-color: #e0efe3;
+    left: 0;
+    top: 27px;
+  }
+  .wave {
+    transform: rotate(180deg);
+  }
+  /*.shade{
+background-color: rgb(150, 187, 150);
+}*/
+  /** CSS using pseudo-elements: **/
+
+  #A {
+    background: #0074d9;
+  }
+
+  #B {
+    background: #7fdbff;
+  }
+
+  #A::after {
+    content: "";
+    position: relative;
+    left: -3rem;
+    /* padding * -1 */
+    top: calc(3rem - 4rem / 2);
+    /* padding - height/2 */
+    float: left;
+    display: block;
+    height: 4rem;
+    width: 100vw;
+    background: hsla(0, 0%, 100%, 0.5);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 70 500 60' preserveAspectRatio='none'%3E%3Crect x='0' y='0' width='500' height='500' style='stroke: none; fill: %237FDBFF;' /%3E%3Cpath d='M0,100 C150,200 350,0 500,100 L500,00 L0,0 Z' style='stroke: none; fill: %230074D9;'%3E%3C/path%3E%3C/svg%3E");
+    background-size: 100% 100%;
+  }
+
+  /** Cosmetics **/
+
+  * {
+    margin: 0;
+  }
+
+  #A,
+  #B {
+    padding: 3rem;
+  }
+
+  div {
+    font-family: monospace;
+    font-size: 1.2rem;
+    line-height: 2.2;
+  }
+
+  #A {
+    color: white;
+  }
+
+  section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 400px;
+    padding-top: 100px;
+    background: #3c31dd;
+  }
+
+  .curve {
+    position: absolute;
+    height: 250px;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  .curve::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    transform: translate(85%, 60%);
+    background-color: hsl(216, 21%, 16%);
+  }
+
+  .curve::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+    width: 55%;
+    height: 100%;
+    background-color: #3c31dd;
+    transform: translate(-4%, 40%);
+    z-index: -1;
+  }
+
+  .wave {
+    display: block;
+    position: relative;
+    height: 40px;
+    width: 100%;
+    background: rgb(57, 27, 112);
+    transform: scale(1, 1);
+    z-index: -1;
+  }
+
+  .wave:before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    right: -25%;
+    top: 20px;
+  }
+
+  .wave:after {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100%;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(57, 27, 112);
+    left: -25%;
+    top: -240px;
+    clip-path: ellipse(100% 15% at -15% 100%);
+  }
+  img {
+    /* filter: grayscale(1); */
+    border-radius: 0px;
+  }
+  .wave {
+    rotate: 30deg;
+    position: relative;
+  }
+  img {
+    opacity: 2.5;
+    /* position: relative;
+    left: 193px; */
+  }
+  * {
+    font-family: sans-serif;
+  }
+  .text {
+    width: 330px;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: small;
+    font-style: italic;
+  }
+  body {
+    background-color: rgb(255 255 255);
+  }
+  /* button {
+    background-color: rgb(194 194 194);
+    border: 2px solid rgb(175 175 175);
+    padding: 13px;
+    border-radius: 3px;
+  }
+  button:hover {
+    background-color: black;
+    color: white;
+  } */
+  .content{
+    /* background-image: url(../../Assets/PNGD.png); */
+    /* width:"450px"; */
+          /* height:"450px"; */
+  }
+  span {
+    text-shadow: 1px 2px 7px;
+    /* font-family: -webkit-body; */
+    font-size: 45px;
+    font-family: cursive;
+}
+h3{
+    /* color: #f1f1f1; */
+}
+#flip div div{
+    font-style: italic;
+    color: rgb(128 128 128);
+    font-family: -webkit-body;
+    font-weight: bold;
+}
+.imga{    background: url(../FrontPage/PNGD.png);
+    width: 232px;
+    height: 222px;
+    /* position: relative; */
+    /* left: 25%0; */
+}
+/* */
+.imga{
+  background-image: url(./PNGD.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 123px;
+  /* border: 2px solid gray; */
+  box-shadow: 2px 2px 2px 2px;
+  display: flex;
+  justify-content: center;
+  padding: auto;
+}
+
+
+body {
+  --black: #000000;
+  --ash-black: #222;
+  --white: #fafafa;
+  --sky: #00ccff;
+  --green: #22dddd;
+  --blue: #1300ff;
+  --dusk: #6600ff;
+  --purple: #9900ff;
+  --pink: #ff0066;
+  --red: #fe0222;
+  --orange: #fd7702;
+  --yellow: #ffbb00;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+
+/* module.css */
+
+/* Base styles */
+
+/* Your existing CSS code... */
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 750px) {
+  .imga {
+   display: none;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .h {
+    padding: 50 100px;
+    /* color: var(--pink); */
+  }
+}
+@media only screen and (max-width: 320px) {
+  .h {
+    margin: 0 30px;
+display: flex;
+justify-content: center;
+  }
+  .textanimate{
+  text-align: center;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .text {
+    /* padding: 50 300px; */
+    /* color: var(--pink); */
+    display: none;
+  }
+}
