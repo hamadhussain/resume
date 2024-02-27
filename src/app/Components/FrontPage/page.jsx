@@ -78,25 +78,27 @@ const Page = () => {
             data-aos-duration="5000"
             className="text-gray-400 font-serif text-xs p-10 text-center italic sd"
           >
-            Hey there! I'm a passionate undergraduate student majoring in
+            Hey there! I&apos;m a passionate undergraduate student majoring in
             software engineering, with a keen interest in crafting seamless
             experiences for users across web and mobile platforms. Over the last
-            couple of years, I've immersed myself in the world of web and app
-            development, exploring various technologies and methodologies to
-            enhance my skills. Whether it's building sleek websites or crafting
-            intuitive mobile applications, I've dedicated myself to mastering
-            the craft through freelance projects and personal endeavors. Along
-            the way, I've had the privilege of collaborating with talented
-            teams, learning the importance of effective communication and
-            teamwork in delivering top-notch solutions. Now, I'm excited to take
-            the next step in my journey by pursuing internship or job
-            opportunities where I can learn from experienced developers,
-            contribute meaningfully to projects, and continue to grow both
-            personally and professionally. With a strong foundation in software
-            engineering and a thirst for knowledge, I'm ready to tackle new
-            challenges and make a positive impact in the field. Let's connect
-            and build something awesome together!
+            couple of years, I&apos;ve immersed myself in the world of web and
+            app development, exploring various technologies and methodologies to
+            enhance my skills. Whether it&apos;s building sleek websites or
+            crafting intuitive mobile applications, I&apos;ve dedicated myself
+            to mastering the craft through freelance projects and personal
+            endeavors. Along the way, I&apos;ve had the privilege of
+            collaborating with talented teams, learning the importance of
+            effective communication and teamwork in delivering top-notch
+            solutions. Now, I&apos;m excited to take the next step in my journey
+            by pursuing internship or job opportunities where I can learn from
+            experienced developers, contribute meaningfully to projects, and
+            continue to grow both personally and professionally. With a strong
+            foundation in software engineering and a thirst for knowledge,
+            I&apos;m ready to tackle new challenges and make a positive impact
+            in the field. Let&apos;s connect and build something awesome
+            together!
           </div>
+
           <center>
             {" "}
             <h1 className="text-3xl p-4 text-gray-500 text-6xl font-serif p">
